@@ -3,23 +3,20 @@ const bezirke = document.getElementsByTagName("g");
 var mistakes = 0;
 const bezirkeArray = [];
 
-function array() {
-    const collection = document.getElementById(this.id).firstElementChild;
-    collection.style.fill = "yellow";
 
-}
+  window.onload = function()  {
+    var selection = document.querySelectorAll('g[id]');
+    var btnsArr = Array.from(selection);
+    alert(btnsArr);
+  };
 
 
 for (let g of bezirke) {
+
   g.addEventListener("click", checkMistake);
-  bezirkeArray.push(this.id);
-  const collection = document.getElementById(this.id).firstElementChild;
-    alert(this.id);
 
-
-  
   g.addEventListener("mouseover", function(){
-    const collection = document.getElementById(this.id).firstElementChild;
+    const collection = document.getElementById(this.id).firstElementChild; //style ist im path-tag, deshalb child Element
     collection.style.fill = "yellow";
   });
 
@@ -35,7 +32,7 @@ for (let g of bezirke) {
 
 
 function checkMistake() {
-  alert("hallo");
+  alert(this.id);
   
   /*if (mistakes == 0) {
     collection.style.fill = "green";
