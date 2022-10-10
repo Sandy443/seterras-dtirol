@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+=======
+h1 {
+    font-size: 35px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+
+#map {
+    
+}
+
+.drawing {
+    fill:none;
+    stroke: black;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+}
+>>>>>>> 37303d26567688c784bbd4ed20ba3d4f3ee187d4
