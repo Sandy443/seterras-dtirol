@@ -5,9 +5,11 @@ const bezirkeArray = [];
 
 
   window.onload = function()  {
-    var selection = document.querySelectorAll('g[id]');
-    var btnsArr = Array.from(selection);
-    alert(btnsArr);
+    const selection = document.querySelectorAll('g[id]');
+    for (let i = 0; i < selection.length; i++) {
+    bezirkeArray.push(selection[i]);
+  }
+  console.log(bezirkeArray);
   };
 
 
@@ -26,9 +28,6 @@ for (let g of bezirke) {
   });
 
 }
-
-
-
 
 
 function checkMistake() {
