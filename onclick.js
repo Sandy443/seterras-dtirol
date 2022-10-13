@@ -1,5 +1,16 @@
 
 const bezirke = document.getElementsByTagName("g");
+const bezirkeArr = [];
+
+window.onload = function functionName() {
+
+  for(var i = 0; i<bezirke.length; i++) {
+    bezirkeArr.push(this.id);
+}
+
+  console.log(bezirkeArr);
+
+}
 
 for (let g of bezirke) {
 
@@ -19,4 +30,5 @@ for (let g of bezirke) {
 
 function checkMistake() {
   alert(this.id);
+  alert(bezirkeArr);
 }
